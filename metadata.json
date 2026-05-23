@@ -1,0 +1,6 @@
+{
+  "name": "TH OS Web Computer",
+  "description": "A web-based desktop operating system interface featuring a taskbar, draggable windows, and built-in apps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
