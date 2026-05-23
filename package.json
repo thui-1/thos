@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://thui-1.github.io/thos",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
@@ -30,10 +33,5 @@
     "typescript": "~5.8.2",
     "vite": "^6.2.3",
     "@types/express": "^4.17.21"
-    {
-  "homepage": "https://thui-1.github.io/thos",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"  
   }
 }
